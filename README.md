@@ -106,8 +106,6 @@
 - [JavaScript 悟道](https://book.douban.com/subject/35469273/)
 - [JavaScript 语言精髓与编程实践（第 3 版）](https://book.douban.com/subject/35085910/)
 
-**上述书籍大家可以关注【[公众号](#作者信息)】发送「资料」获取，另外还附赠了前端 10 万字的面试攻略，已经帮助上千人拿到 offer。**
-
 ## 前端核心学习路径
 
 前端知识点很多这是公认的事情，但是我们确实没必要把所有知识都去学习，那样只会贪多嚼不烂。我们能把核心知识点、热门技术以及工作中需要用到的知识学好就已经能打败大部分前端工程师了，剩下的大家可以自行根据兴趣选择学习内容。
@@ -412,7 +410,7 @@ CSS 选择器是 CSS 规则的第一部分。它是元素和其他部分组合�
 - [ ] 推荐文章
   - [ ] [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [ ] [Flexbox 布局中不为人知的细节](https://juejin.cn/post/6938292463605907492)
-- [] 实战
+- [ ] 实战
   - [ ] [FLEXBOX FROGGY](https://flexboxfroggy.com/) 一个趣味性小游戏学习 Flex 的网站
 
 #### grid
