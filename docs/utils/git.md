@@ -362,6 +362,12 @@ git stash命令提供了参数用于缓存上面两种类型的文件。使用-u
 ## merge 某些文件
 ```git checkout branch_name file_url```
 
+## merge冲突部分以xx为准
+```javascript
+git merge -Xours dev # 冲突部分以当前分支为准
+git merge -Xtheirs dev # 冲突部分以待合并分支为准
+```
+
 ## 合并commit
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/292785/1648100941262-0a596426-4b04-4f36-b74b-bfeb2454c760.png#clientId=u1ef2e941-ab25-4&from=paste&height=284&id=u5b705155&name=image.png&originHeight=284&originWidth=1304&originalType=binary&ratio=1&rotation=0&showTitle=false&size=63198&status=done&style=none&taskId=ue39d5ed0-38fe-4d72-8f51-5a8e2a3ac0d&title=&width=1304)
 现在我们在测试分支上添加了五次提交，我们的目标是把最后四个提交合并为一个提交
