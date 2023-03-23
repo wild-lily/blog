@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置 Git 的用户名和邮箱 | Yolo</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.671fbdd0.css" as="style"><link rel="preload" href="/blog/assets/js/app.1b73a34e.js" as="script"><link rel="preload" href="/blog/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/blog/assets/js/42.f5a93f99.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.302da1cf.js"><link rel="prefetch" href="/blog/assets/js/11.49cb5a17.js"><link rel="prefetch" href="/blog/assets/js/12.cc05ffa9.js"><link rel="prefetch" href="/blog/assets/js/13.bc6a6d00.js"><link rel="prefetch" href="/blog/assets/js/14.49df6a75.js"><link rel="prefetch" href="/blog/assets/js/15.672d9069.js"><link rel="prefetch" href="/blog/assets/js/16.8a0222c4.js"><link rel="prefetch" href="/blog/assets/js/17.d45e1d15.js"><link rel="prefetch" href="/blog/assets/js/18.670357ed.js"><link rel="prefetch" href="/blog/assets/js/19.8df598c5.js"><link rel="prefetch" href="/blog/assets/js/20.4493dfa7.js"><link rel="prefetch" href="/blog/assets/js/21.29efc0e0.js"><link rel="prefetch" href="/blog/assets/js/22.dee43871.js"><link rel="prefetch" href="/blog/assets/js/23.12c95ddc.js"><link rel="prefetch" href="/blog/assets/js/24.fc85ab8b.js"><link rel="prefetch" href="/blog/assets/js/25.d2553c7d.js"><link rel="prefetch" href="/blog/assets/js/26.13251b4e.js"><link rel="prefetch" href="/blog/assets/js/27.704b5b19.js"><link rel="prefetch" href="/blog/assets/js/28.073d1c04.js"><link rel="prefetch" href="/blog/assets/js/29.82ede666.js"><link rel="prefetch" href="/blog/assets/js/3.420c64ab.js"><link rel="prefetch" href="/blog/assets/js/30.4e4e5bbf.js"><link rel="prefetch" href="/blog/assets/js/31.7ac6d421.js"><link rel="prefetch" href="/blog/assets/js/32.1a06c393.js"><link rel="prefetch" href="/blog/assets/js/33.7eb5807c.js"><link rel="prefetch" href="/blog/assets/js/34.44b85fd5.js"><link rel="prefetch" href="/blog/assets/js/35.3bcdab5e.js"><link rel="prefetch" href="/blog/assets/js/36.4b30ada3.js"><link rel="prefetch" href="/blog/assets/js/37.372eef9f.js"><link rel="prefetch" href="/blog/assets/js/38.eb5538b0.js"><link rel="prefetch" href="/blog/assets/js/39.615f174c.js"><link rel="prefetch" href="/blog/assets/js/4.d12742be.js"><link rel="prefetch" href="/blog/assets/js/40.b9313f5d.js"><link rel="prefetch" href="/blog/assets/js/41.9120b576.js"><link rel="prefetch" href="/blog/assets/js/43.12e57085.js"><link rel="prefetch" href="/blog/assets/js/44.5f50fa3f.js"><link rel="prefetch" href="/blog/assets/js/45.167bfe07.js"><link rel="prefetch" href="/blog/assets/js/46.2c467463.js"><link rel="prefetch" href="/blog/assets/js/47.d6509dea.js"><link rel="prefetch" href="/blog/assets/js/5.216cae74.js"><link rel="prefetch" href="/blog/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/blog/assets/js/7.9c9172a7.js"><link rel="prefetch" href="/blog/assets/js/8.c310a593.js"><link rel="prefetch" href="/blog/assets/js/9.d9b0c4aa.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.671fbdd0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Yolo</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/internet/计算机网络简史.html" class="nav-link">
+  计网
+</a></div><div class="nav-item"><a href="/blog/frame/" class="nav-link">
+  框架
+</a></div><div class="nav-item"><a href="/blog/utils/源码阅读.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/blog/interview/vue/" class="nav-link">
+  面试
+</a></div> <a href="https://github.com/SetoInlandSea/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/internet/计算机网络简史.html" class="nav-link">
+  计网
+</a></div><div class="nav-item"><a href="/blog/frame/" class="nav-link">
+  框架
+</a></div><div class="nav-item"><a href="/blog/utils/源码阅读.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/blog/interview/vue/" class="nav-link">
+  面试
+</a></div> <a href="https://github.com/SetoInlandSea/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>计网</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/internet/计算机网络简史.html" class="sidebar-link">计算机网络简史</a></li><li><a href="/blog/internet/OSI七层模型.html" class="sidebar-link">OSI七层模型</a></li><li><a href="/blog/internet/TCP_IP协议群.html" class="sidebar-link">TCP_IP协议群</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>框架</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/frame/" class="sidebar-link">首页</a></li><li><a href="/blog/frame/vue/vue3.0项目工程环境.html" class="sidebar-link">vue3.0项目工程环境</a></li><li><a href="/blog/frame/vue/vue3.html" class="sidebar-link">vue3</a></li><li><a href="/blog/frame/vue/大文件上传.html" class="sidebar-link">大文件上传</a></li><li><a href="/blog/frame/react/" class="sidebar-link">react</a></li><li><a href="/blog/frame/other/nuxt.html" class="sidebar-link">nuxt</a></li><li><a href="/blog/frame/other/electron.html" class="sidebar-link">electron</a></li><li><a href="/blog/frame/常用的方法.html" class="sidebar-link">常用的方法</a></li><li><a href="/blog/frame/字符串技巧.html" class="sidebar-link">字符串技巧</a></li><li><a href="/blog/frame/黑魔法.html" class="sidebar-link">黑魔法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/utils/源码阅读.html" class="sidebar-link">源码阅读</a></li><li><a href="/blog/utils/Chrome debugger.html" class="sidebar-link">Chrome debugger</a></li><li><a href="/blog/utils/git.html" aria-current="page" class="active sidebar-link">git</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/utils/git.html#配置-git-的用户名和邮箱" class="sidebar-link">配置 Git 的用户名和邮箱</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-add" class="sidebar-link">git add</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-commit" class="sidebar-link">git commit</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-pull" class="sidebar-link">git pull</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-fetch" class="sidebar-link">git fetch</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#修改最近一次提交的作者" class="sidebar-link">修改最近一次提交的作者</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#撤销add" class="sidebar-link">撤销add</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#如何删除某一个commit" class="sidebar-link">如何删除某一个commit</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#如何撤销上一次commit" class="sidebar-link">如何撤销上一次commit</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#如何撤销git-reset-hard" class="sidebar-link">如何撤销git reset --hard</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#暂时存储" class="sidebar-link">暂时存储</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#远程覆盖本地" class="sidebar-link">远程覆盖本地</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#本地覆盖远程" class="sidebar-link">本地覆盖远程</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#修改commit信息" class="sidebar-link">修改commit信息</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#github" class="sidebar-link">github</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#移除文件" class="sidebar-link">移除文件</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#移动文件" class="sidebar-link">移动文件</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#查看历史" class="sidebar-link">查看历史</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#撤销" class="sidebar-link">撤销</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#远程仓库" class="sidebar-link">远程仓库</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-alias" class="sidebar-link">git alias</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-拉取远程分支到本地" class="sidebar-link">git 拉取远程分支到本地</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#将a分支上的commit-复制到b分支上" class="sidebar-link">将A分支上的commit 复制到B分支上</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#修改已经提交并push后的commit注释" class="sidebar-link">修改已经提交并push后的commit注释</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#撤销某次提交" class="sidebar-link">撤销某次提交</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-branch" class="sidebar-link">git branch</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#本地修改不想提交的情况下用stash暂存" class="sidebar-link">本地修改不想提交的情况下用stash暂存</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#merge-某些文件" class="sidebar-link">merge 某些文件</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#merge冲突部分以xx为准" class="sidebar-link">merge冲突部分以xx为准</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#合并commit" class="sidebar-link">合并commit</a></li><li class="sidebar-sub-header"><a href="/blog/utils/git.html#git-rebase-让你的提交记录更加清晰可读" class="sidebar-link">git rebase 让你的提交记录更加清晰可读</a></li></ul></li><li><a href="/blog/utils/Chrome扩展插件.html" class="sidebar-link">Chrome扩展插件</a></li><li><a href="/blog/utils/npm发布.html" class="sidebar-link">npm发布</a></li><li><a href="/blog/utils/shell.html" class="sidebar-link">shell</a></li><li><a href="/blog/utils/前端工具.html" class="sidebar-link">前端工具</a></li><li><a href="/blog/utils/webpack.html" class="sidebar-link">webpack</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>产品</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>面试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>分享</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="配置-git-的用户名和邮箱"><a href="#配置-git-的用户名和邮箱" class="header-anchor">#</a> 配置 Git 的用户名和邮箱</h2> <div class="language- extra-class"><pre class="language-text"><code>git config user.name 'username1' 
+git config user.email test1@qq.com
+</code></pre></div><h2 id="git-add"><a href="#git-add" class="header-anchor">#</a> git add</h2> <div class="language- extra-class"><pre class="language-text"><code># 添加某个文件到暂存区，后面可以跟多个文件，以空格区分
+git add xxx
+# 添加当前更改的所有文件到暂存区。
+git add .
+</code></pre></div><h2 id="git-commit"><a href="#git-commit" class="header-anchor">#</a> git commit</h2> <div class="language- extra-class"><pre class="language-text"><code># 提交暂存的更改，会新开编辑器进行编辑
+git commit 
+# 提交暂存的更改，并记录下备注
+git commit -m &quot;you message&quot;
+# 等同于 git add . &amp;&amp; git commit -m
+git commit -am
+# 对最近一次的提交的信息进行修改,此操作会修改commit的hash值
+git commit --amend
+</code></pre></div><h2 id="git-pull"><a href="#git-pull" class="header-anchor">#</a> git pull</h2> <div class="language- extra-class"><pre class="language-text"><code># 从远程仓库拉取代码并合并到本地，可简写为 git pull 等同于 git fetch &amp;&amp; git merge 
+git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+# 使用rebase的模式进行合并
+git pull --rebase &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+</code></pre></div><h2 id="git-fetch"><a href="#git-fetch" class="header-anchor">#</a> git fetch</h2> <p>与 git pull 不同的是 git fetch 操作仅仅只会拉取远程的更改，不会自动进行 merge 操作。对你当前的代码没有影响</p> <div class="language- extra-class"><pre class="language-text"><code># 获取远程仓库特定分支的更新
+git fetch &lt;远程主机名&gt; &lt;分支名&gt;
+# 获取远程仓库所有分支的更新
+git fetch --all
+</code></pre></div><h2 id="修改最近一次提交的作者"><a href="#修改最近一次提交的作者" class="header-anchor">#</a> 修改最近一次提交的作者</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code> git commit <span class="token operator">--</span>amend <span class="token operator">--</span>reset<span class="token operator">-</span>author
+</code></pre></div><h2 id="撤销add"><a href="#撤销add" class="header-anchor">#</a> 撤销add</h2> <p><strong>git add 添加了多余文件</strong>
+git add .  表示当前目录所有文件，不小心就会提交其他文件
+git add 如果添加了错误的文件的话
+撤销操作
+git status 先看一下add 中的文件
+git reset HEAD 如果后面什么都不跟的话 就是上一次add 里面的全部撤销了
+git reset HEAD XXX.py 就是对某个py文件进行撤销了
+git reset HEAD file  即使对file文件夹进行撤销</p> <h2 id="如何删除某一个commit"><a href="#如何删除某一个commit" class="header-anchor">#</a> 如何删除某一个commit</h2> <div class="language- extra-class"><pre class="language-text"><code>git log
+
+Git rebase -i commitId
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>想删除的前一次提交的commitId
+Pick 改成drop
+保存退出 Esc:wq</p></div> <div class="language- extra-class"><pre class="language-text"><code>git push origin master --force
+</code></pre></div><h2 id="如何撤销上一次commit"><a href="#如何撤销上一次commit" class="header-anchor">#</a> 如何撤销上一次commit</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>取消上一次commit,加上--hard则不保留当前更改</p></div> <div class="language- extra-class"><pre class="language-text"><code>git reset --hard HEAD~1
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>git push --force
+</code></pre></div><h2 id="如何撤销git-reset-hard"><a href="#如何撤销git-reset-hard" class="header-anchor">#</a> 如何撤销git reset --hard</h2> <div class="language- extra-class"><pre class="language-text"><code>git reflog
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>git reset --hard commitId
+</code></pre></div><h2 id="暂时存储"><a href="#暂时存储" class="header-anchor">#</a> 暂时存储</h2> <div class="language- extra-class"><pre class="language-text"><code>git stash //把本地的改动暂存起来
+git stash save &quot;message&quot; 执行存储时，添加备注，方便查找。
+git stash pop // 应用最近一次暂存的修改，并删除暂存的记录
+git stash apply  // 应用某个存储,但不会把存储从存储列表中删除，默认使用第一个存储,即 stash@{0}，如果要使用其他个，git stash apply stash@{$num} 。
+git stash list // 查看 stash 有哪些存储
+git stash clear // 删除所有缓存的 stash
+</code></pre></div><h2 id="远程覆盖本地"><a href="#远程覆盖本地" class="header-anchor">#</a> 远程覆盖本地</h2> <div class="language- extra-class"><pre class="language-text"><code>$ git fetch --all
+$ git reset --hard origin/master 
+$ git pull
+</code></pre></div><h2 id="本地覆盖远程"><a href="#本地覆盖远程" class="header-anchor">#</a> 本地覆盖远程</h2> <div class="language- extra-class"><pre class="language-text"><code>git push origin master -f
+</code></pre></div><h2 id="修改commit信息"><a href="#修改commit信息" class="header-anchor">#</a> 修改commit信息</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>‘C’进入VIM编辑状态，修改完成。esc退出编辑，两次大写字母'Z'保存并退出</p></div> <div class="language- extra-class"><pre class="language-text"><code>$ git commit --amend
+</code></pre></div><h2 id="github"><a href="#github" class="header-anchor">#</a> github</h2> <p>建立git仓库，cd到你的本地项目根目录下，执行git命令</p> <div class="language- extra-class"><pre class="language-text"><code>git init
+</code></pre></div><p>将项目的所有文件添加到仓库中</p> <div class="language- extra-class"><pre class="language-text"><code>git add .
+</code></pre></div><p>将add的文件commit到仓库</p> <div class="language- extra-class"><pre class="language-text"><code>git commit -m &quot;注释语句&quot;
+</code></pre></div><p>去github上创建自己的Repository
+复制地址git@github.com:iamporia/***.git
+将本地的仓库关联到github上</p> <div class="language- extra-class"><pre class="language-text"><code>git remote add origin git@github.com:iamporia/***.git
+</code></pre></div><p>上传github之前，要先pull一下</p> <div class="language- extra-class"><pre class="language-text"><code>git pull origin master
+</code></pre></div><p>上传代码到github远程仓库</p> <div class="language- extra-class"><pre class="language-text"><code>git push -u origin master
+</code></pre></div><p>查看尚未暂存的文件更新了哪些部分</p> <div class="language- extra-class"><pre class="language-text"><code>git diff
+</code></pre></div><p>查看已暂存的将要添加到下次提交里的内容</p> <div class="language- extra-class"><pre class="language-text"><code>git diff --cached 或者 git diff --staged
+</code></pre></div><h2 id="移除文件"><a href="#移除文件" class="header-anchor">#</a> 移除文件</h2> <p>要从已跟踪文件清单中移除</p> <div class="language- extra-class"><pre class="language-text"><code>git rm filename
+</code></pre></div><p>如果删除之前修改过并且已经放到暂存区域的话,force强制</p> <div class="language- extra-class"><pre class="language-text"><code>git rm filename -f
+</code></pre></div><p>git仓库中删除，工作区仍保留</p> <div class="language- extra-class"><pre class="language-text"><code>git rm --cached filename
+</code></pre></div><h2 id="移动文件"><a href="#移动文件" class="header-anchor">#</a> 移动文件</h2> <div class="language- extra-class"><pre class="language-text"><code>git mv file to directory
+</code></pre></div><p>rename</p> <div class="language- extra-class"><pre class="language-text"><code>git mv file_from file_to
+</code></pre></div><p>其实，运行 git mv 就相当于运行了下面三条命令：</p> <div class="language- extra-class"><pre class="language-text"><code>$ mv README.md README
+$ git rm README.md
+$ git add README
+</code></pre></div><h2 id="查看历史"><a href="#查看历史" class="header-anchor">#</a> 查看历史</h2> <div class="language- extra-class"><pre class="language-text"><code>git log
+</code></pre></div><ul><li><strong>-p</strong> 显示每次提交的内容差异</li> <li><strong>-2</strong> 显示最近两次提交</li> <li><strong>--stat</strong> 显示提交的简略的统计信息</li> <li><strong>--pretty</strong> 指定使用不同于默认格式的方式展示提交历史，子选项oneline，short，full，fuller，format</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git log --pretty=oneline
+</code></pre></div><h2 id="撤销"><a href="#撤销" class="header-anchor">#</a> 撤销</h2> <ul><li>取消所有暂存的文件</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git reset . 或者 git reset HEAD .
+</code></pre></div><ul><li>取消暂存的文件</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git reset HEAD -filename
+</code></pre></div><ul><li>你提交后发现忘记了暂存某些需要的修改，可以像下面这样操作：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
+</code></pre></div><p>最终你只会有一个提交——第二次提交将代替第一次提交的结果。</p> <ul><li>撤消对文件的修改</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git checkout -- filename
+</code></pre></div><h2 id="远程仓库"><a href="#远程仓库" class="header-anchor">#</a> 远程仓库</h2> <ul><li>查看远程仓库
+<img src="https://cdn.nlark.com/yuque/0/2020/png/292785/1607917245342-8c11739c-d421-4bab-a7ed-b0f45eef9dc9.png#height=184&amp;id=Iu3le&amp;originHeight=184&amp;originWidth=692&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=&amp;width=692" alt=""></li> <li>添加远程仓库</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git remote add &lt;shortname&gt; &lt;url&gt;
+</code></pre></div><p>字符串 shortname 来代替整个 URL，拉取仓库信息
+git fetch shortname</p> <ul><li>从远程仓库中抓取与拉取</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git fetch [remote-name]
+</code></pre></div><p>这个命令会访问远程仓库，从中拉取所有你还没有的数据。 执行完成后，你将会拥有那个远程仓库中所有分支的引用，可以随时合并或查看。</p> <div class="language- extra-class"><pre class="language-text"><code>git fetch origin
+</code></pre></div><p>如果你使用 clone 命令克隆了一个仓库，命令会自动将其添加为远程仓库并默认以 “origin” 为简写。 所以，git fetch origin 会抓取克隆（或上一次抓取）后新推送的所有工作。 必须注意 git fetch 命令会将数据拉取到你的本地仓库——它并不会自动合并或修改你当前的工作。 当准备好时你必须手动将其合并入你的工作。</p> <div class="language- extra-class"><pre class="language-text"><code>git pull
+</code></pre></div><p>如果你有一个分支设置为跟踪一个远程分支,可以使用 git pull 命令来自动的抓取然后合并远程分支到当前分支。</p> <ul><li>推送到远程仓库</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git push [remote-name] [branch-name]
+</code></pre></div><ul><li>查看某个远程仓库</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git remote show [remote-name]
+</code></pre></div><ul><li>远程仓库的移除与重命名</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git remote rename pb paul
+</code></pre></div><p>值得注意的是这同样也会修改你的远程分支名字。 那些过去引用 pb/master 的现在会引用 paul/master</p> <ul><li>移除一个远程仓库
+<code>git remote rm [remote-name]</code></li></ul> <h2 id="git-alias"><a href="#git-alias" class="header-anchor">#</a> git alias</h2> <div class="language- extra-class"><pre class="language-text"><code>git config --global alias.co checkout
+</code></pre></div><h2 id="git-拉取远程分支到本地"><a href="#git-拉取远程分支到本地" class="header-anchor">#</a> git 拉取远程分支到本地</h2> <p>1.把远程分支拉到本地
+<code>git fetch origin dev（dev为远程仓库的分支名）</code>
+2.在本地创建分支dev并切换到该分支
+<code>git checkout -b dev(本地分支名称)</code> origin/dev(远程分支名称)
+3.把某个分支上的内容都拉取到本地
+<code>git pull origin dev(远程分支名称)</code></p> <h2 id="将a分支上的commit-复制到b分支上"><a href="#将a分支上的commit-复制到b分支上" class="header-anchor">#</a> 将A分支上的commit 复制到B分支上</h2> <p>方式一 cherry-pick 推荐</p> <ul><li>git checkout B</li> <li>git cherry-pick commitID</li></ul> <p>方式二 rebase
+git rebase   [startpoint]   [endpoint]  --onto  [branchName]
+<img src="https://cdn.nlark.com/yuque/0/2022/png/292785/1648101985381-a6be5926-5635-4e09-a943-99c11765224c.png#clientId=u1ef2e941-ab25-4&amp;from=paste&amp;height=206&amp;id=ueaa0f3a5&amp;name=image.png&amp;originHeight=206&amp;originWidth=1068&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=44685&amp;status=done&amp;style=none&amp;taskId=u0fe3e1ef-9df9-445f-9d8c-964f3b501d3&amp;title=&amp;width=1068" alt="image.png"> <img src="https://cdn.nlark.com/yuque/0/2022/png/292785/1648101967741-13d132c0-c0d6-4d65-ae35-2c5404e1ac8c.png#clientId=u1ef2e941-ab25-4&amp;from=paste&amp;height=372&amp;id=u89ee9c5e&amp;name=image.png&amp;originHeight=372&amp;originWidth=1314&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=117612&amp;status=done&amp;style=none&amp;taskId=u2617d594-4108-4e53-b776-f68c1366216&amp;title=&amp;width=1314" alt="image.png"> <strong>git rebase ad85dc7 30510af --onto main</strong><img src="https://cdn.nlark.com/yuque/0/2022/png/292785/1648102604823-825a9f71-4449-48dc-964e-d533d6392b05.png#clientId=u1ef2e941-ab25-4&amp;from=paste&amp;height=318&amp;id=u23f372fe&amp;name=image.png&amp;originHeight=318&amp;originWidth=930&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=90721&amp;status=done&amp;style=none&amp;taskId=u0dba77c2-48d3-49c6-aa9b-f3fde4d0ad3&amp;title=&amp;width=930" alt="image.png">
+所以，虽然此时HEAD所指向的内容正是我们所需要的，但是main分支是没有任何变化的，git只是将dev1-dev4部分的提交内容复制一份粘贴到了master所指向的提交后面，我们需要做的就是将main所指向的提交id设置为当前HEAD所指向的提交id就可以了，即:
+<img src="https://cdn.nlark.com/yuque/0/2022/png/292785/1648102767148-940b305a-2806-4577-aade-647d86a9c678.png#clientId=u1ef2e941-ab25-4&amp;from=paste&amp;height=299&amp;id=iRlSf&amp;name=image.png&amp;originHeight=314&amp;originWidth=798&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=102696&amp;status=done&amp;style=none&amp;taskId=uec0585ab-ca7b-4c75-8029-a7e32700476&amp;title=&amp;width=760" alt="image.png"></p> <h2 id="修改已经提交并push后的commit注释"><a href="#修改已经提交并push后的commit注释" class="header-anchor">#</a> 修改已经提交并push后的commit注释</h2> <p>把代码push到远程后，发现commit的注释居然多了几个错别字，不行，必须改了！
+搜索了一些答案之后自己做了一个总结如下：</p> <ul><li>修改倒数第1次的commit</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$ git rebase -i HEAD~1
+</code></pre></div><ul><li>修改pick为edit</li> <li>回车后进入一个页面，
+按i进入编辑模式，
+将要修改的那一条的pick修改成edit，
+按esc退出编辑模式，输入:wq保存并退出<br></li> <li>修改commit注释内容</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git commit --amend
+</code></pre></div><p>按i进入编辑模式，修改内容，退出编辑模式，输入:wq保存并退出</p> <div class="language- extra-class"><pre class="language-text"><code>git rebase --continue
+</code></pre></div><ul><li>强制push</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git push --force github
+</code></pre></div><h2 id="撤销某次提交"><a href="#撤销某次提交" class="header-anchor">#</a> 撤销某次提交</h2> <ol><li><p>普通撤销</p> <p><code>git revert commit-id</code> 版本是叠加的  会生成一个commit记录（跟reset不一样）
+<img src="https://cdn.nlark.com/yuque/0/2021/png/292785/1616150182838-d8528a81-e250-44e3-8bbd-2f287b422de2.png#height=56&amp;id=BknrE&amp;name=image.png&amp;originHeight=57&amp;originWidth=447&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=10859&amp;status=done&amp;style=none&amp;title=&amp;width=442" alt="image.png"></p></li> <li><p>撤销merge的commit</p> <p><code>git revert commit-id -m 1</code></p></li></ol> <h2 id="git-branch"><a href="#git-branch" class="header-anchor">#</a> git branch</h2> <div class="language- extra-class"><pre class="language-text"><code># 新建本地分支，但不切换
+git branch &lt;branch-name&gt; 
+# 查看本地分支
+git branch
+# 查看远程分支
+git branch -r
+# 查看本地和远程分支
+git branch -a
+# 删除本地分支
+git branch -D &lt;branch-nane&gt;
+# 重新命名分支
+git branch -m &lt;old-branch-name&gt; &lt;new-branch-name&gt;
+# 删除远程分支
+git push origin --delete your_branch
+</code></pre></div><h3 id="远程已经删除的分支-本地-git-branch-a-还是能查看到"><a href="#远程已经删除的分支-本地-git-branch-a-还是能查看到" class="header-anchor">#</a> 远程已经删除的分支 本地 git branch -a 还是能查看到</h3> <div class="language-git fetch origin --prune extra-class"><pre class="language-git"><code></code></pre></div><h2 id="本地修改不想提交的情况下用stash暂存"><a href="#本地修改不想提交的情况下用stash暂存" class="header-anchor">#</a> 本地修改不想提交的情况下用stash暂存</h2> <p>暂存到本地</p> <div class="language- extra-class"><pre class="language-text"><code>git stash save 'msg'
+</code></pre></div><p>场景：A在dev分支开发新的功能，突然大佬说要优先改个别的问题。新功能没开发完，不想提交。怎么办？
+这个时候就可以用stash把更改暂存本地 本地工作区clean之后就可以随意切换分支了
+<img src="https://cdn.nlark.com/yuque/0/2021/png/292785/1621224060277-2b5cc94f-9496-48d0-97a6-fca3ee59ddb4.png#clientId=u09f03e4b-9868-4&amp;from=paste&amp;height=168&amp;id=u3e9805a5&amp;name=image.png&amp;originHeight=335&amp;originWidth=753&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=73049&amp;status=done&amp;style=none&amp;taskId=u373077cb-0de8-447d-b07d-b6ec67593ec&amp;title=&amp;width=376.5" alt="image.png">
+git stash list 可查看暂存的list
+<img src="https://cdn.nlark.com/yuque/0/2021/png/292785/1621224081563-a0031304-aaec-4029-9f1b-66f065eea60b.png#clientId=u09f03e4b-9868-4&amp;from=paste&amp;height=44&amp;id=u367e2a8a&amp;name=image.png&amp;originHeight=87&amp;originWidth=525&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=10319&amp;status=done&amp;style=none&amp;taskId=u6f13b225-cd05-4a3c-a160-7dc5fd841e8&amp;title=&amp;width=262.5" alt="image.png">
+git stash pop stash@{id}  不写stash@{id} 默认pop最近的一次
+<img src="https://cdn.nlark.com/yuque/0/2021/png/292785/1621224101912-45efce98-0ba0-49fd-9762-734d4ea66016.png#clientId=u09f03e4b-9868-4&amp;from=paste&amp;height=158&amp;id=ue306c49e&amp;name=image.png&amp;originHeight=316&amp;originWidth=729&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=62328&amp;status=done&amp;style=none&amp;taskId=uccaaa0a1-12eb-4fcd-bfea-9c2fa3e520b&amp;title=&amp;width=364.5" alt="image.png">
+默认情况下，git stash会缓存下列文件：</p> <ul><li>添加到暂存区的修改（staged changes）</li> <li>Git跟踪的但并未添加到暂存区的修改（unstaged changes）</li> <li>但不会缓存一下文件：</li> <li>在工作目录中新的文件（untracked files）</li> <li>被忽略的文件（ignored files）</li></ul> <p>git stash命令提供了参数用于缓存上面两种类型的文件。使用-u或者--include-untracked可以stash untracked文件。使用-a或者--all命令可以stash当前目录下的所有修改。
+至于git stash的其他命令建议参考Git manual。
+<a href="https://www.cnblogs.com/tocy/p/git-stash-reference.html" target="_blank" rel="noopener noreferrer">https://www.cnblogs.com/tocy/p/git-stash-reference.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="merge-某些文件"><a href="#merge-某些文件" class="header-anchor">#</a> merge 某些文件</h2> <p><code>git checkout branch_name file_url</code></p> <h2 id="merge冲突部分以xx为准"><a href="#merge冲突部分以xx为准" class="header-anchor">#</a> merge冲突部分以xx为准</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code>git merge <span class="token operator">-</span>Xours dev # 冲突部分以当前分支为准
+git merge <span class="token operator">-</span>Xtheirs dev # 冲突部分以待合并分支为准
+</code></pre></div><h2 id="合并commit"><a href="#合并commit" class="header-anchor">#</a> 合并commit</h2> <p><img src="https://cdn.nlark.com/yuque/0/2022/png/292785/1648100941262-0a596426-4b04-4f36-b74b-bfeb2454c760.png#clientId=u1ef2e941-ab25-4&amp;from=paste&amp;height=284&amp;id=u5b705155&amp;name=image.png&amp;originHeight=284&amp;originWidth=1304&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=63198&amp;status=done&amp;style=none&amp;taskId=ue39d5ed0-38fe-4d72-8f51-5a8e2a3ac0d&amp;title=&amp;width=1304" alt="image.png">
+现在我们在测试分支上添加了五次提交，我们的目标是把最后四个提交合并为一个提交</p> <div class="language- extra-class"><pre class="language-text"><code>git rebase -i d661c52
+
+pick：保留该commit（缩写:p）
+reword：保留该commit，但我需要修改该commit的注释（缩写:r）
+edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）
+squash：将该commit和前一个commit合并（缩写:s）
+fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）
+exec：执行shell命令（缩写:x）
+drop：我要丢弃该commit（缩写:d）
+</code></pre></div><p>根据自己的需要修改注释 提交</p> <h2 id="git-rebase-让你的提交记录更加清晰可读"><a href="#git-rebase-让你的提交记录更加清晰可读" class="header-anchor">#</a> git rebase 让你的提交记录更加清晰可读</h2> <p>rebase 翻译为变基，他的作用和 merge 很相似，用于把一个分支的修改合并到当前分支上。<a href="https://juejin.cn/post/6974184935804534815" target="_blank" rel="noopener noreferrer">掘金<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/SetoInlandSea/blog/edit/docs/docs/utils/git.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/utils/Chrome debugger.html" class="prev">
+        Chrome debugger
+      </a></span> <span class="next"><a href="/blog/utils/Chrome扩展插件.html">
+        Chrome扩展插件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.1b73a34e.js" defer></script><script src="/blog/assets/js/2.733019b2.js" defer></script><script src="/blog/assets/js/42.f5a93f99.js" defer></script>
+  </body>
+</html>
